@@ -18,7 +18,7 @@ const Nothing = (x) => ({
   inspect: () => `Nothing`,
 });
 
-/* for inline script
+// for inline script
 const Maybe = {
    Of: x => x === null || x === undefined || x.isNothing ? Nothing() : Just(x);
 };
