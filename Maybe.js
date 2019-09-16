@@ -18,12 +18,14 @@ const Nothing = (x) => ({
   inspect: () => `Nothing`,
 });
 
+/* for inline script
 const Maybe = {
    Of: x => x === null || x === undefined || x.isNothing ? Nothing() : Just(x);
 };
 
 
 /* for modular script
+const MaybeOf = x => x === null || x === undefined || x.isNothing ? Nothing() : Just(x);
 const exportMaybe = {
   of: MaybeOf
 };
